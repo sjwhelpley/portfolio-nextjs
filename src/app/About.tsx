@@ -23,7 +23,7 @@ export default function About() {
             at{" "}
             <a
               href="https://visimo.ai/"
-              className="font-bold text-white hover:text-teal-300"
+              className="font-bold text-white hover:text-[#88dded]"
             >
               VISIMO
             </a>
@@ -44,14 +44,14 @@ export default function About() {
             college, I also completed internships at{" "}
             <a
               href="https://www.responsival.com/"
-              className="font-bold text-white hover:text-teal-300"
+              className="font-bold text-white hover:text-[#88dded]"
             >
               Responsival
             </a>{" "}
             and{" "}
             <a
               href="https://redtreewebdesign.com/"
-              className="font-bold text-white hover:text-teal-300"
+              className="font-bold text-white hover:text-[#88dded]"
             >
               RedTree Web Design
             </a>

@@ -2,13 +2,13 @@
 
 import React, { useRef } from "react";
 
-import Footer from "../components/Footer";
-import SocialIcons from "./SocialIcons";
 import Experience from "./Experience";
 import About from "./About";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
 
+import Footer from "@/components/Footer";
+import SocialIcons from "@/components/SocialIcons";
 import ScrollRotatingImage from "@/components/ScrollRotatingImage";
 
 export default function Home() {

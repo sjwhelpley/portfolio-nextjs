@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+
 import Section from "./Section";
 
 type ExperienceItemType = {
@@ -41,16 +44,19 @@ function ExperienceItem({ item }: { item: ExperienceItemType }) {
         <p className="uppercase text-sm">{item.dates}</p>
       </div>
       <div className="col-span-6">
-        <p className="font-bold text-lg text-white group-hover:text-teal-300">
-          {item.currentPosition} | {item.company}{" "}
-          <i className="fa-solid fa-square-arrow-up-right ml-1 group-hover:translate-x-1 group-hover:-translate-y-1" />
+        <p className="font-bold text-lg text-white group-hover:text-[#88dded]">
+          {item.currentPosition} · {item.company}{" "}
+          <FontAwesomeIcon
+            icon={faSquareArrowUpRight}
+            className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1"
+          />
         </p>
         <p className="mt-2 text-slate-300">{item.description}</p>
         <ul className="mt-2 flex flex-wrap">
           {item.technologies.map((tech) => (
             <li
               key={tech}
-              className="rounded-full bg-teal-300/10 text-teal-300 text-sm font-medium py-1 px-2 mr-1.5 mt-2"
+              className="rounded-full bg-[#88dded]/10 text-[#88dded] text-sm font-medium py-1 px-2 mr-1.5 mt-2"
             >
               {tech}
             </li>
@@ -73,10 +79,13 @@ export default function Experience() {
           <a
             href="/Whelpley_Resume.pdf"
             target="_blank"
-            className="group font-bold text-white cursor-pointer hover:text-teal-300"
+            className="group font-bold text-white cursor-pointer hover:text-[#88dded]"
           >
             Full Resume{" "}
-            <i className="fa-solid fa-square-arrow-up-right ml-1 group-hover:translate-x-1 group-hover:-translate-y-1" />
+            <FontAwesomeIcon
+              icon={faSquareArrowUpRight}
+              className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1"
+            />
           </a>
         </>
       }

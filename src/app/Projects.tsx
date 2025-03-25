@@ -1,5 +1,8 @@
 import Image, { StaticImageData } from "next/image";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
+
 import Section from "./Section";
 import calculator from "../../public/calc.png";
 import form from "../../public/form.png";
@@ -60,16 +63,19 @@ function ProjectItem({ item }: { item: ProjectType }) {
         <Image src={item.img} alt={item.title} />
       </div>
       <div className="col-span-6">
-        <p className="font-bold text-white group-hover:text-teal-300">
+        <p className="font-bold text-white group-hover:text-[#88dded]">
           {item.title}{" "}
-          <i className="fa-solid fa-square-arrow-up-right ml-1 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          <FontAwesomeIcon
+            icon={faSquareArrowUpRight}
+            className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1"
+          />{" "}
         </p>
         <p className="mt-2 text-slate-300">{item.description}</p>
         <ul className="mt-2 flex flex-wrap">
           {item.technologies.map((tech) => (
             <li
               key={tech}
-              className="rounded-full bg-teal-300/10 text-teal-300 text-sm font-medium py-1 px-2 mr-1.5 mt-2"
+              className="rounded-full bg-[#88dded]/10 text-[#88dded] text-sm font-medium py-1 px-2 mr-1.5 mt-2"
             >
               {tech}
             </li>
