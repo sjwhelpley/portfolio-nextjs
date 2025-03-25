@@ -15,6 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Samantha Whelpley",
   description: "Samantha Whelpley's portfolio",
+  openGraph: {
+    title: "Samantha Whelpley",
+    description: "Samantha Whelpley's portfolio",
+    images: [
+      {
+        url: "/api/og",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
