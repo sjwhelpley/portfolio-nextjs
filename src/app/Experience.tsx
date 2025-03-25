@@ -21,7 +21,7 @@ const experiences = [
     company: "VISIMO",
     link: "https://visimo.ai/",
     description:
-      "Managed a team of 5 developers, contributing to sprint planning, task allocation, and budget management, improving coordination and communication with project managers. Mentored junior developers in frontend and design best practices, creating a structured learning path that doubled their productivity within three months. Lead the frontend development and maintenance of NIXN, a construction risk management platform, transitioning the legacy site from jQuery to an offline-first Progressive Web App (PWA) with a React and Apollo Client architecture, now supporting over 1000 users with an average of 500 form submissions per day. Develop the frontend for a USDA-funded risk management platform using React and Django REST, enhancing data reliability by making it offline-first with Redux Offline. Implement unit testing strategies using Vitest across all projects, consistently achieving 80%+ code coverage, ensuring high code quality and reliability.",
+      "Managed a team of 5 developers, contributing to sprint planning, task allocation, and budget management, improving coordination and communication with project managers. Mentored junior developers in frontend and design best practices, creating a structured learning path that doubled their productivity within three months. Lead the frontend development and maintenance of NIXN, a construction risk management platform, transitioning the legacy site from jQuery to an offline-first Progressive Web App (PWA) with a React and Apollo Client architecture, now supporting over 1000 users with an average of 500 form submissions per day. Developed the frontend for a USDA-funded risk management platform using React and Django REST, enhancing data reliability by making it offline-first with Redux Offline. Implemented unit testing strategies using Vitest across all projects, consistently achieving 80%+ code coverage, ensuring high code quality and reliability.",
     technologies: [
       "JavaScript",
       "React",
@@ -34,6 +34,7 @@ const experiences = [
 ];
 
 function ExperienceItem({ item }: { item: ExperienceItemType }) {
+  console.log(item.description.split("."));
   return (
     <a
       href={item.link}
@@ -51,7 +52,12 @@ function ExperienceItem({ item }: { item: ExperienceItemType }) {
             className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1"
           />
         </p>
-        <p className="mt-2 text-slate-300">{item.description}</p>
+        {item.description
+          .split(".")
+          .map(
+            (d) =>
+              d !== "" && <li className="mt-2 text-slate-300">{d.trim()}.</li>
+          )}
         <ul className="mt-2 flex flex-wrap">
           {item.technologies.map((tech) => (
             <li
