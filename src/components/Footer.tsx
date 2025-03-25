@@ -11,7 +11,7 @@ export default function Footer() {
           target="_blank"
           className="font-medium"
         >
-          Brittany Chiang's portfolio.
+          Brittany Chiang&apos;s portfolio.
         </a>
       </p>
     </footer>
