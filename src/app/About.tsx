@@ -14,12 +14,23 @@ export default function About() {
             into clear technical requirements. I take pride in my attention to
             detail and enjoy working through the nuances that turn a good
             product into a great one. While I&apos;m always expanding my backend
-            skills — so far with Django and Python — my focus remains on
-            creating intuitive, maintainable, and well-tested user interfaces.
+            skills, my focus remains on creating intuitive, maintainable, and 
+            well-tested user interfaces.
           </p>
 
           <p className="mt-3 text-slate-300">
-            Most recently, I was a Software Developer II and software team lead
+            Currently, I am a Frontend Software Engineer II
+            at{" "}
+            <a
+              href="https://hackerrank.com/"
+              className="font-bold text-white hover:text-[#88dded]"
+            >
+              HackerRank
+            </a>{" "}on the Self-Serve team.
+          </p>
+
+          <p className="mt-3 text-slate-300">
+            Previously, I was a Software Developer II and software team lead
             at{" "}
             <a
               href="https://visimo.ai/"

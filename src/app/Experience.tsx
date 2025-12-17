@@ -14,6 +14,23 @@ type ExperienceItemType = {
 };
 
 const experiences = [
+    {
+    dates: "April 2025 - Present",
+    currentPosition: "Frontend Software Developer II",
+    pastPositions: [],
+    company: "HackerRank",
+    link: "https://hackerrank.com/",
+    description:
+      "Work across large, legacy React/Rails codebases on the Self-Serve team, implementing features and resolving defects for company administration workflows. Build key components for Hiring Plan feature in a standalone Next.js + TanStack Query codebase, delivering an AI-assisted flow that transforms a user's job description into recommended coding tests and interviews, alongside a cleaner candidate tracking experience. Implement frontend components for a billing status banner that surfaced unpaid invoices and account lock states, prompting immediate user action and supporting faster invoice resolution and account reactivation. Deliver full-stack functionality for an experiment enabling free-trial and lower-tier users to preview higher-plan test questions, helping validate content value and inform upgrade conversion strategy. Modernize legacy areas by refactoring components from JavaScript to TypeScript and migrating Jest to Vitest, improving type safety, test speed, and overall code reliability.",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Next.js",
+      "Vite",
+      "Ruby on Rails"
+    ],
+  },
   {
     dates: "May 2021 - March 2025",
     currentPosition: "Software Developer II",
@@ -34,7 +51,6 @@ const experiences = [
 ];
 
 function ExperienceItem({ item }: { item: ExperienceItemType }) {
-  console.log(item.description.split("."));
   return (
     <a
       href={item.link}
