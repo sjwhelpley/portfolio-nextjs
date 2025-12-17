@@ -56,7 +56,7 @@ function ExperienceItem({ item }: { item: ExperienceItemType }) {
           .split(".")
           .map(
             (d) =>
-              d !== "" && <li className="mt-2 text-slate-300">{d.trim()}.</li>
+              d !== "" && <li key={d} className="mt-2 text-slate-300">{d.trim()}.</li>
           )}
         <ul className="mt-2 flex flex-wrap">
           {item.technologies.map((tech) => (
