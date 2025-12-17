@@ -24,6 +24,7 @@ export default function About() {
             <a
               href="https://hackerrank.com/"
               className="font-bold text-white hover:text-[#88dded]"
+              target="_blank"
             >
               HackerRank
             </a>{" "}on the Self-Serve team.
@@ -35,6 +36,7 @@ export default function About() {
             <a
               href="https://visimo.ai/"
               className="font-bold text-white hover:text-[#88dded]"
+              target="_blank"
             >
               VISIMO
             </a>
@@ -56,6 +58,7 @@ export default function About() {
             <a
               href="https://www.responsival.com/"
               className="font-bold text-white hover:text-[#88dded]"
+              target="_blank"
             >
               Responsival
             </a>{" "}
@@ -63,6 +66,7 @@ export default function About() {
             <a
               href="https://redtreewebdesign.com/"
               className="font-bold text-white hover:text-[#88dded]"
+              target="_blank"
             >
               RedTree Web Design
             </a>
