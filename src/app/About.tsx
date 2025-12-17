@@ -7,10 +7,10 @@ export default function About() {
       content={
         <>
           <p className="text-slate-300">
-            I&apos;m a frontend developer with a strong foundation in building
+            I&apos;m a frontend software engineer with a strong foundation in building
             modern web applications using React, Redux, and design systems.
-            I&apos;m drawn to solving tricky problems—whether it&apos;s tracking
-            down elusive bugs, untangling edge cases, or turning vague ideas
+            I&apos;m drawn to solving tricky problems, whether it&apos;s tracking
+            down bugs, untangling edge cases, or turning vague ideas
             into clear technical requirements. I take pride in my attention to
             detail and enjoy working through the nuances that turn a good
             product into a great one. While I&apos;m always expanding my backend

@@ -18,7 +18,7 @@ export default function Home() {
     <div className="flex flex-col lg:flex-row h-screen overflow-x-hidden">
       <section className="relative w-full lg:w-[30vw] lg:fixed lg:h-screen py-8 lg:py-16 pl-8 pr-4">
         <h1 className="text-4xl font-bold">Samantha Whelpley</h1>
-        <h2 className="mt-3 text-xl">Frontend Engineer</h2>
+        <h2 className="mt-3 text-xl">Frontend Software Engineer</h2>
         <p className="mt-4 text-md text-slate-300">
           I design and build intuitive interfaces, with a strong eye for detail
           and a commitment to quality code.
