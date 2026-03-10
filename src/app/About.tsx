@@ -19,11 +19,11 @@ export default function About() {
           </p>
 
           <p className="mt-3 text-slate-300">
-            Currently, I am a Frontend Software Engineer II
+            My last role was as a Frontend Software Engineer II
             at{" "}
             <a
               href="https://hackerrank.com/"
-              className="font-bold text-white hover:text-[#88dded]"
+              className="font-bold text-white hover:text-accent"
               target="_blank"
             >
               HackerRank
@@ -35,7 +35,7 @@ export default function About() {
             at{" "}
             <a
               href="https://visimo.ai/"
-              className="font-bold text-white hover:text-[#88dded]"
+              className="font-bold text-white hover:text-accent"
               target="_blank"
             >
               VISIMO
@@ -57,7 +57,7 @@ export default function About() {
             college, I also completed internships at{" "}
             <a
               href="https://www.responsival.com/"
-              className="font-bold text-white hover:text-[#88dded]"
+              className="font-bold text-white hover:text-accent"
               target="_blank"
             >
               Responsival
@@ -65,7 +65,7 @@ export default function About() {
             and{" "}
             <a
               href="https://redtreewebdesign.com/"
-              className="font-bold text-white hover:text-[#88dded]"
+              className="font-bold text-white hover:text-accent"
               target="_blank"
             >
               RedTree Web Design

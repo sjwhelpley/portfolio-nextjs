@@ -63,7 +63,7 @@ function ProjectItem({ item }: { item: ProjectType }) {
         <Image src={item.img} alt={item.title} />
       </div>
       <div className="col-span-6">
-        <p className="font-bold text-white group-hover:text-[#88dded]">
+        <p className="font-bold text-white group-hover:text-accent">
           {item.title}{" "}
           <FontAwesomeIcon
             icon={faSquareArrowUpRight}
@@ -75,7 +75,7 @@ function ProjectItem({ item }: { item: ProjectType }) {
           {item.technologies.map((tech) => (
             <li
               key={tech}
-              className="rounded-full bg-[#88dded]/10 text-[#88dded] text-sm font-medium py-1 px-2 mr-1.5 mt-2"
+              className="rounded-full bg-accent/10 text-accent text-sm font-medium py-1 px-2 mr-1.5 mt-2"
             >
               {tech}
             </li>
