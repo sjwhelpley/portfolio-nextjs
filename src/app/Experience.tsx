@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,7 +16,7 @@ type ExperienceItemType = {
 
 const experiences = [
   {
-    dates: "April 2025 - Present",
+    dates: "April 2025 - June 2026",
     currentPosition: "Frontend Software Developer II",
     pastPositions: [],
     company: "HackerRank",
@@ -49,7 +50,11 @@ const experiences = [
   },
 ];
 
-function ExperienceItem({ item }: { item: ExperienceItemType }) {
+type ExperienceItemProps = {
+  item: ExperienceItemType;
+};
+
+function ExperienceItem({ item }: ExperienceItemProps): ReactElement {
   return (
     <a
       href={item.link}
@@ -71,7 +76,7 @@ function ExperienceItem({ item }: { item: ExperienceItemType }) {
           (d) =>
             d !== "" && (
               <li key={d} className="mt-2 text-slate-300">
-                {d.trim()}.
+                {d.trim()}
               </li>
             ),
         )}

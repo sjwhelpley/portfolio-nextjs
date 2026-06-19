@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import Image, { StaticImageData } from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -52,7 +53,11 @@ const projects = [
   },
 ];
 
-function ProjectItem({ item }: { item: ProjectType }) {
+type ProjectItemProps = {
+  item: ProjectType;
+};
+
+function ProjectItem({ item }: ProjectItemProps): ReactElement {
   return (
     <a
       href={item.link}
