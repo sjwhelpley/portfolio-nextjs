@@ -75,6 +75,7 @@ export default function About() {
       keep learning and building with others who care about their craft.
     </>,
   ];
+
   return (
     <Section
       title="About"
@@ -83,7 +84,7 @@ export default function About() {
           {paragraphs.map((paragraph, index) => (
             <p
               key={index}
-              className={`text-slate-300 ${index !== 0 && "mt-3"}`}
+              className={`text-slate-300 ${index !== 0 ? "mt-3" : ""}`}
             >
               {paragraph}
             </p>
